@@ -152,7 +152,7 @@ body{
 }
 
 .leftAside .sideMenu li.active a{
-    color: var(--light-success);
+    color: var(--primary);
 }
 
 .leftAside.close .sideMenu li a {

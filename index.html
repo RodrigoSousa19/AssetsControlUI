@@ -16,9 +16,9 @@
         </a>
         
         <ul class="sideMenu">
-            <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
-            <li><a href="#"><i class='bx bxs-add-to-queue'></i>Cadastros</a></li>
-            <li><a href="#"><i class='bx bx-search-alt-2'></i>Consultar Registros</a></li>
+            <li><a href="#" id="dashboard"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="#" id="register"><i class='bx bxs-add-to-queue'></i>Em Breve...</a></li>
+            <li><a href="#" id="search"><i class='bx bx-search-alt-2'></i>Em Breve...</a></li>
         </ul>
         
         <ul class="sideMenu">
@@ -29,7 +29,6 @@
     </div>
 
     <div class="mainContent">
-
         <nav>
             <i class='bx bx-menu'></i>
             <form action="#">
@@ -45,7 +44,7 @@
             </a>
         </nav>
         
-        <main>
+        <main id class="visible">
             <header>
                 <div class="left">
                     <h1>Dashboard</h1>
@@ -96,10 +95,10 @@
                         <i class='bx bx-receipt'></i>
                         <h3>Funcionários Cadastrados Recentemente</h3>
                         <i class='bx bx-filter'></i>
-                        <i class='bx bx-search'></i>
+                        <i class='bx bx-refresh'></i>
                     </div>
 
-                    <table>
+                    <table id="dataTable">
                         <thead>
                             <tr>
                                 <th>Nome</th>
@@ -155,8 +154,17 @@
 
         </main>
 
+        <main class="register">
+            <header>
+                <div class="left">
+                    <h1>Registro de Ativos</h1>
+                </div>
+            </header>
+        </main>
+
     </div>
 
     <script src="script.js"></script>
+    <script src="API/apiData.js"></script>
 </body>
 </html>

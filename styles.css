@@ -500,6 +500,56 @@ body{
     margin-bottom: 0;
 }
 
+.mainContent main .registerArea form{
+    display: flex;
+    background: var(--light);
+    color: var(--dark);
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.mainContent main .registerArea form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.mainContent main .registerArea form .inputBox input, select{
+    position: relative;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    outline: none;
+    border:none;
+    border-bottom: solid 1px var(--primary);
+    font-size: 1em;
+}
+
+.mainContent main .registerArea form button{
+    height: 60px;
+    width: 130px;
+    text-align: center;
+    border-radius: 36px;
+    background: var(--light);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    letter-spacing:1px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.mainContent main .registerArea form button:hover{
+    color: white;
+    background: var(--primary);
+}
+
+.mainContent main .registerArea form button:active{
+    letter-spacing: 2px;
+}
 
 @media screen and (max-width: 768px) {
     .leftAside{

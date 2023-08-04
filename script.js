@@ -54,3 +54,20 @@ toggler.addEventListener('change', function () {
         document.body.classList.remove('dark');
     }
 });
+
+function validarEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+const emailInput = document.getElementById('email'); 
+const email = emailInput.value;
+
+emailInput.addEventListener('input', function () {
+    const email = emailInput.value;
+    if (validarEmail(email)) {
+        emailInput.setCustomValidity('');
+    } else {
+        emailInput.setCustomValidity('Email inválido');
+    }
+});

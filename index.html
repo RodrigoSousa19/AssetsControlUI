@@ -1,170 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Assets Control</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="leftAside">
-        
-        <a href="#" class="logo">
-            <i class='bx bx-desktop'></i>
-            <div class="logoName">Assets<span>Control</span></div>
-        </a>
-        
-        <ul class="sideMenu">
-            <li><a href="#" id="dashboard"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
-            <li><a href="#" id="register"><i class='bx bxs-add-to-queue'></i>Em Breve...</a></li>
-            <li><a href="#" id="search"><i class='bx bx-search-alt-2'></i>Em Breve...</a></li>
-        </ul>
-        
-        <ul class="sideMenu">
-            <li>
-                <a href="#" class="logout"><i class='bx bx-log-out-circle'></i>Logout</a>
-            </li>
-        </ul>
+      <a href="#" class="logo">
+        <i class="bx bx-desktop"></i>
+        <div class="logoName">Assets<span>Control</span></div>
+      </a>
+
+      <ul class="sideMenu">
+        <li>
+          <a href="#" id="dashboard"
+            ><i class="bx bxs-dashboard"></i>Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="#" id="register"
+            ><i class="bx bxs-add-to-queue"></i>Em Breve...</a
+          >
+        </li>
+        <li>
+          <a href="#" id="search"
+            ><i class="bx bx-search-alt-2"></i>Em Breve...</a
+          >
+        </li>
+      </ul>
+
+      <ul class="sideMenu">
+        <li>
+          <a href="#" class="logout"
+            ><i class="bx bx-log-out-circle"></i>Logout</a
+          >
+        </li>
+      </ul>
     </div>
 
     <div class="mainContent">
-        <nav>
-            <i class='bx bx-menu'></i>
-            <form action="#">
-                <div class="input">
-                    <input type="search" placeholder="search">
-                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
-                </div>
-            </form>
-            <input type="checkbox" id="theme-toggle" hidden>
-            <label for="theme-toggle" class="theme-toggle"></label>
-            <a href="#" class="profile">
-                <img src="" alt="">
-            </a>
-        </nav>
-        
-        <main id class="visible">
-            <header>
-                <div class="left">
-                    <h1>Dashboard</h1>
-                </div>
-                <a href="#" class="downloadReport"><i class='bx bx-cloud-download'></i><span>Download CSV</span></a>
-            </header>
-        
-            <ul class="insights">
-                <li>
-                    <i class='bx bx-desktop'></i>
-                    <span class="info">
-                        <h3>12</h3>
-                        <p>Ativos Registrados</p>
-                    </span>
-                </li>
+      <nav>
+        <i class="bx bx-menu"></i>
+        <form action="#">
+          <div class="input">
+            <input type="search" placeholder="search" />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+        <a href="#" class="profile">
+          <img src="" alt="" />
+        </a>
+      </nav>
 
-                <li>
-                    <i class='bx bx-dollar-circle'></i>
-                    <span class="info">
-                        <h3>R$6,742</h3>
-                        <p>Custo Mensal dos Ativos</p>
-                    </span>
-                </li>
+      <main id class="visible">
+        <header>
+          <div class="left">
+            <h1>Dashboard</h1>
+          </div>
+          <a href="#" class="downloadReport"
+            ><i class="bx bx-cloud-download"></i><span>Download CSV</span></a
+          >
+        </header>
 
-                <li>
-                    <i class='bx bxs-user'></i>
-                    <span class="info">
-                        <h3>5</h3>
-                        <p>Funcionários Registrados</p>
-                    </span>
-                </li>
+        <ul class="insights">
+          <li>
+            <i class="bx bx-desktop"></i>
+            <span class="info">
+              <h3>12</h3>
+              <p>Ativos Registrados</p>
+            </span>
+          </li>
 
-                <li>
-                    <i class='bx bx-line-chart'></i>
-                    <span class="info">
-                        <h3>10%</h3>
-                        <p>Diferença de custos comparado ao mês anterior</p>
-                    </span>
-                </li>
+          <li>
+            <i class="bx bx-dollar-circle"></i>
+            <span class="info">
+              <h3>R$6,742</h3>
+              <p>Custo Mensal dos Ativos</p>
+            </span>
+          </li>
 
-            </ul>
-            
-            <div class="newAssetsTable">
+          <li>
+            <i class="bx bxs-user"></i>
+            <span class="info">
+              <h3>5</h3>
+              <p>Funcionários Registrados</p>
+            </span>
+          </li>
 
-                <div class="users">
+          <li>
+            <i class="bx bx-line-chart"></i>
+            <span class="info">
+              <h3>10%</h3>
+              <p>Diferença de custos comparado ao mês anterior</p>
+            </span>
+          </li>
+        </ul>
 
-                    <div class="header">
-                        <i class='bx bx-receipt'></i>
-                        <h3>Funcionários Cadastrados Recentemente</h3>
-                        <i class='bx bx-filter'></i>
-                        <i class='bx bx-refresh'></i>
-                    </div>
-
-                    <table id="dataTable">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Email</th>
-                                <th>Centro de Custo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                                <tr>
-                                    <td>Rodrigo Santos de Sousa</td>
-                                    <td>rodrigocbs913@gmail.com</td>
-                                    <td><span class="setor Ti">Ti</span></td>
-                                </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="equipments">
-
-                    <div class="header">
-                        <i class='bx bx-note'></i>
-                        <h3>Fornecedores</h3>
-                        <i class='bx bx-filter'></i>
-                    </div>
-
-                    <ul class="suppliersList">
-                        <li class="activeContract">
-                            <div class="supplierTitle">
-                                <i class='bx bx-check-circle'></i>
-                                <p>EMC</p>
-                            </div>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="activeContract">
-                            <div class="supplierTitle">
-                                <i class='bx bx-check-circle'></i>
-                                <p>AGARIS</p>
-                            </div>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="inactiveContract">
-                            <div class="supplierTitle">
-                                <i class='bx bx-x-circle'></i>
-                                <p>DELL</p>
-                            </div>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                    </ul>
-
-                </div>
-
+        <div class="newAssetsTable">
+          <div class="users">
+            <div class="header">
+              <i class="bx bx-receipt"></i>
+              <h3>Funcionários Cadastrados Recentemente</h3>
+              <i class="bx bx-filter"></i>
+              <i class="bx bx-refresh"></i>
             </div>
 
-        </main>
+            <table id="dataTable">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>Centro de Custo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rodrigo Santos de Sousa</td>
+                  <td>rodrigocbs913@gmail.com</td>
+                  <td><span class="setor Ti">Ti</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-        <main class="register">
-            <header>
-                <div class="left">
-                    <h1>Registro de Ativos</h1>
+          <div class="equipments">
+            <div class="header">
+              <i class="bx bx-note"></i>
+              <h3>Fornecedores</h3>
+              <i class="bx bx-filter"></i>
+            </div>
+
+            <ul class="suppliersList">
+              <li class="activeContract">
+                <div class="supplierTitle">
+                  <i class="bx bx-check-circle"></i>
+                  <p>EMC</p>
                 </div>
-            </header>
-        </main>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+              <li class="activeContract">
+                <div class="supplierTitle">
+                  <i class="bx bx-check-circle"></i>
+                  <p>AGARIS</p>
+                </div>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+              <li class="inactiveContract">
+                <div class="supplierTitle">
+                  <i class="bx bx-x-circle"></i>
+                  <p>DELL</p>
+                </div>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="registerArea">
+          <header>
+            <div class="left">
+              <h1>Área de Cadastros</h1>
+            </div>
+          </header>
+
+          <form id="registerForm">
+            <div class="header">
+                <h2>Cadastro de Fornecedores</h2>
+            </div>
+
+            <div class="inputBox">
+              <label for="renter formTitle">Fornecedor:</label>
+              <input type="text" id="renter" name="renter" required />
+            </div>
+
+            <div class="inputBox">
+              <label for="contractDate formTitle">Data de Contratação:</label>
+              <input type="date" id="contractDate" name="contractDate" required/>
+            </div>
+
+            <div class="inputBox">
+              <label for="status formTitle">Status do Contrato:</label>
+              <select id="status" name="status" required>
+                <option value="Ativo">Ativo</option>
+                <option value="Inativo">Inativo</option>
+              </select>
+            </div>
+
+            <div class="inputBox">
+              <label for="email formTitle">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <button id="button" type="submit" onclick="cadastrarFornecedor(event)">
+                Cadastrar Fornecedor
+            </button>
+          </form>
+        </div>
+      </main>
     </div>
 
     <script src="script.js"></script>
     <script src="API/apiData.js"></script>
-</body>
+  </body>
 </html>

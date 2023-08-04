@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiUrl = 'https://localhost:7285/ActiveControl/api/GetAllUsers'; // Substitua pelo endpoint correto da sua API
+    const apiUrl = 'https://localhost:7285/ActiveControl/api/GetAllUsers';
   
-    // Função para obter e exibir os dados da API na tabela
     function fetchData() {
       fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
           const tableBody = document.querySelector('#dataTable tbody');
-          tableBody.innerHTML = ''; // Limpa os dados existentes na tabela
+          tableBody.innerHTML = ''; 
   
           data.forEach(item => {
             const row = document.createElement('tr');
@@ -22,13 +21,43 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Erro ao obter dados da API:', error));
     }
   
-    // Chama a função fetchData ao carregar a página para exibir os dados iniciais
     fetchData();
   
-    // Adiciona um evento de clique no botão "Atualizar" para obter os dados novamente
     const refreshButton = document.querySelector('.bx-refresh');
     refreshButton.addEventListener('click', () => {
       fetchData();
     });
   });
   
+  function cadastrarFornecedor(event) {
+    event.preventDefault();
+
+    const form = document.getElementById('registerForm');
+    const formData = new FormData(form);
+
+    const payload = {
+        name: formData.get('renter'),
+        contractDate: formData.get('contractDate'),
+        status: formData.get('status') === 'Ativo',
+        email: formData.get('email')
+    };
+
+    // Faça a requisição POST para a API
+    fetch('https://localhost:7285/ActiveControl/api/RegisterNewRenter', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Erro ao cadastrar fornecedor');
+        }
+    })
+    .then(data => {
+        console.log(data);
+        alert('Fornecedor cadastrado com sucesso!');
+        form.reset();
+    })
+}

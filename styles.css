@@ -508,6 +508,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .mainContent main .registerArea form .inputBox{
@@ -523,6 +524,8 @@ body{
     border-radius: 15px;
     outline: none;
     border:none;
+    background: var(--grey);
+    color: var(--dark);
     border-bottom: solid 1px var(--primary);
     font-size: 1em;
 }
